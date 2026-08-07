@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a= ["Sonal",21, "Female","Software Developer"];
+        document.write(a+ "<br>");
+
+        a[1] =20;
+        document.write(a+"<br>");
+        delete a[3];
+        document.write(a + "<br>");
+    </script>
+    <br>
+    <script>
+        var b=["renuka", "sonal","Neha","Samruddhi"];
+        document.write(b+"<br>");
+        b.sort();
+         document.write(b+"<br>");
+         b.reverse();
+         document.write(b + "<br>");
+    </script>
+    <script>
+        var c=["Renuka" , "sonal","Neha","Samruddhi"];
+        document.write(c+ "<br>");
+        c.pop();
+        c.pop();
+        document.write(c + "<br>");
+        c.push("karuna");
+        c.push("Monika");
+        document.write(c + "<br>");
+    </script>
+    <script>
+        var c=["Renuka","sonal","Neha","Samruddhi"];
+        document.write(c+ "<br>");
+        c.shift();
+        c.shift();
+        document.write(c + "<br>");
+        c.unshift("karuna");
+        c.unshift("Monika");
+        document.write(c + "<br>");
+    </script>
+    <br>
+    <br>
+    <script>
+        var d=["sonal", "Samruddhi", "Neha", "Renuka"];
+        var e=["Sakshi","Shweta","Naina"];
+        var g=["Shruti", "Aditi"];
+
+        var f=d.concat(e,g);
+        document.write(f + "<br>");
+        var z= f.join("/");
+        document.write(z +"<br>");
+    </script>
+
+</body>
+</html>
