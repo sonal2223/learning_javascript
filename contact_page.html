@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .contact-container {
+            width: 560px;
+            margin: 30px auto;
+            padding: 20px 25px 25px;
+            border-left: 1px solid #e5e5e5;
+            border-right: 1px solid #e5e5e5;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 500;
+            margin: 0 0 35px;
+            color: #222;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 7px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d5d5d5;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        input {
+            height: 38px;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #999;
+        }
+
+        textarea {
+            height: 115px;
+            resize: vertical;
+        }
+
+        .gender {
+            margin-top: 5px;
+            margin-bottom: 16px;
+        }
+
+        .gender label {
+            display: inline;
+            margin-right: 15px;
+            font-size: 14px;
+        }
+
+        .gender input {
+            width: auto;
+            height: auto;
+            margin-right: 4px;
+        }
+
+        .terms {
+            margin-bottom: 18px;
+            font-size: 14px;
+        }
+
+        .terms input {
+            width: auto;
+            height: auto;
+            margin-right: 5px;
+        }
+
+        .terms label {
+            display: inline;
+        }
+
+        .submit-btn {
+            width: 100%;
+            height: 42px;
+            background-color: #087ee5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #066fc9;
+        }
+
+        @media (max-width: 600px) {
+            .contact-container {
+                width: 95%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contact-container ">
+
+        <h1>Contact Us</h1>
+
+        <form>
+
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                >
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your email"
+                    required
+                >
+            </div>
+
+            <!-- Mobile Number -->
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input
+                    type="tel"
+                    id="mobile"
+                    name="mobile"
+                    placeholder="Your mobile number"
+                    required
+                >
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter password"
+                    required
+                >
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Confirm password"
+                    required
+                >
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Your message"
+                    required
+                ></textarea>
+            </div>
+
+            <!-- Gender -->
+            <div class="gender">
+                <label>Gender:</label>
+
+                <label>
+                    <input type="radio" name="gender" value="Male">
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="Female">
+                    Female
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="Other">
+                    Other
+                </label>
+            </div>
+
+            <!-- Terms -->
+            <div class="terms">
+                <input
+                    type="checkbox"
+                    id="terms"
+                    name="terms"
+                    required
+                >
+
+                <label for="terms">
+                    I agree to the terms & conditions
+                </label>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="submit-btn">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
