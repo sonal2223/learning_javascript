@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- change Text Example -->
+    <h2 id="title">Hello Its Sonal</h2>
+    <button onclick ="changeText()">Change Text</button>
+    <script>
+        function changeText(){
+            document.getElementById("title").innerHTML ="Hello Sonal and Samrudhi";
+        }
+    </script>
+    <hr>
+    <!-- change color example -->
+     <h1 id="myText">This is my text</h1>
+     <button onclick="changeColor()">Change color</button>
+     <script>
+        function changeColor(){
+            document.getElementById("myText").style.color="blue";
+        }
+     </script>
+     <hr>
+     <!-- Change Images -->
+      <img id="myImg" src="images/image8.jpg" width="200"/><br>
+      <button onclick="changeImage()">Change Image</button>
+      <script>
+        function changeImage(){
+            document.getElementById("myImg").src ="images/image10.jpg";
+        }
+      </script>
+      <hr>
+      <label for="name">Enter your name</label>
+      <input type="text" id="name" placeholder="Enter your name"/>
+      <button onclick="displayName()">Submit</button>
+      <h2 id="output"></h2>
+
+      <script>
+        function displayName(){
+            let name =document.getElementById("name").value;
+            document.getElementById("output").innerHTML ="Hello" + name;
+        }
+      </script>
+</body>
+</html>
