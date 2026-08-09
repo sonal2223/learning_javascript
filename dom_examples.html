@@ -23,6 +23,7 @@
             document.getElementById("myText").style.color="blue";
         }
      </script>
+
      <hr>
      <!-- Change Images -->
       <img id="myImg" src="images/image8.jpg" width="200"/><br>
@@ -32,7 +33,9 @@
             document.getElementById("myImg").src ="images/image10.jpg";
         }
       </script>
+
       <hr>
+      <!-- get input from user and display it on screen -->
       <label for="name">Enter your name</label>
       <input type="text" id="name" placeholder="Enter your name"/>
       <button onclick="displayName()">Submit</button>
@@ -44,5 +47,42 @@
             document.getElementById("output").innerHTML ="Hello" + name;
         }
       </script>
+      <hr>
+      <!-- increase decrease font size example -->
+       <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum delectus totam cum accusamus debitis cupiditate sit reprehenderit, voluptatibus, ratione id doloribus? Modi distinctio, deserunt rerum est consequatur suscipit optio.</p>
+       <button onclick="increase()">+</button>
+       <button onclick="decrease()">-</button>
+       <script>
+        let size = 18;
+        function increase(){
+           size++
+           document.getElementById("para").style.fontSize =size +"px";
+
+        }
+        function decrease() {
+        size--;
+        document.getElementById("para").style.fontSize = size + "px";
+    }
+       </script>
+       <hr>
+       <!-- toggle Dark Mode Example -->
+        <button onclick="toggleTheme()">Toogle Dark Mode</button>
+        <style>
+            body{
+                background-color: white;
+                color: black;
+
+            }
+            .dark-mode{
+                background-color: black;
+                color: white;
+
+            }
+        </style>
+        <script>
+            function toggleTheme(){
+                document.body.classList.toggle("dark-mode");
+            }
+        </script>
 </body>
 </html>
